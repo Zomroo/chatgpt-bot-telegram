@@ -22,7 +22,7 @@ bot.help((ctx) => {
 
 // Image command
 bot.command("image", async (ctx) => {
-  const text = ctx.message.text?.replace("/image", "")?.trim().toLowerCase();
+  const text = ctx.message.text && ctx.message.text.replace("/image", "").trim().toLowerCase();;
 
   if (text) {
    
